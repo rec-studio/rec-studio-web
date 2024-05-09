@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish');
-@import url('https://fonts.googleapis.com/css2?family=PT+Root+UI');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 :root {
@@ -118,10 +117,12 @@ li::marker {
     }
     h1.typography__display {
         font-weight: 300;
-        margin-top: 0px;
+        margin: 0px;
     }
     h5.typography__display {
         font-weight: 300;
+        margin-bottom: 0px;
+
     }
 
 /* Adaptive */
@@ -158,10 +159,32 @@ li::marker {
         }
     }
 
-#about {
+#cover {
     justify-content: center;
     min-height: 88vh;
+    border-bottom: rgba(63, 48, 39, 0.08) 1px solid;
 }
 #contacts {
     margin-bottom: 64px;
+}
+#action-button {
+    margin-top: 16px;
+}
+
+
+.uibutton {
+    display: inline-flex;
+    flex-direction: row;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    padding: 8px 24px;
+    border: #000 0px solid;
+    border-radius: 32px;
+
+    background-color: var(--color-text-link);
+    color: var(--color-background);
 }
