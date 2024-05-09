@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css2?family=PT+Root+UI');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 :root {
     --color-background: #FEFEFE;
@@ -9,6 +10,7 @@
     --color-text-link: rgba(9, 194, 195, 1.0);
     --color-text-header: #0192C9;
     --color-accent: #FF3F33;
+    --color-footer: #2b2a28;
 }
 
 body {
@@ -38,6 +40,8 @@ main {
 footer {
     margin-top: auto;
     padding: 24px;
+    background-color: var(--color-footer);
+    color: rgba(255, 255, 255, 0.60);
 }
 
 a {
@@ -75,7 +79,7 @@ li::marker {
 
 /* Typography */
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'PT Sans Narrow', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         color: var(--color-text-header);
     }
     h1 {
@@ -116,6 +120,9 @@ li::marker {
     h1.typography__display {
         font-weight: 300;
         margin-top: 0px;
+    }
+    h5.typography__display {
+        font-weight: 300;
     }
 
 /* Adaptive */
