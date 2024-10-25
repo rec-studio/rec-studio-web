@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 :root {
-    --color-background: rgba(1, 74, 101, 1.0);
+    --color-background: #FEFEFE;
     --color-text-primary: rgba(63, 48, 39, 0.60);
     --color-text-secondary: rgba(63, 48, 39, 0.38);
     --color-text-disabled: rgba(63, 48, 39, 0.20);
@@ -19,10 +19,13 @@ body {
 
     min-height: 100vh;
     margin: 0px;
-    padding: 0px;
+
+    /*justify-content: space-between;
+    align-items: space-between;*/
 
     background-color: var(--color-background);
-    color: var(--color-text-primary);
+    /*background: linear-gradient(110deg, #F0E2D0 60%, #E6CFB2 60%);*/
+    color: var(--color-text-primary)
 }
 
 main {
@@ -31,14 +34,11 @@ main {
 
     margin-top: auto;
     margin-bottom: auto;
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 footer {
     margin-top: auto;
     padding: 24px;
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: var(--color-footer);
     color: rgba(255, 255, 255, 0.60);
 }
 
@@ -54,35 +54,15 @@ li::marker {
     color: var(--color-accent);
 }
 
-section {
-    min-height: 48vh;
-    width: 100%;
-    /*margin: 0px;
-    padding: 0px;
-
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-direction: column;
-    justify-content: center;*/
-}
-
 /* Layout */
     .box {
         display: flex;
     }
     .box.row {
         flex-direction: row;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-    .box.row.wrapped {
-        flex-wrap: wrap;
     }
     .box.column {
         flex-direction: column;
-        flex-grow: 1;
-        flex-shrink: 1;
     }
     .box.center {
         justify-content: center;
@@ -95,16 +75,6 @@ section {
         justify-content: center;
     }
 
-    .grid {
-        display: grid;
-    }
-    .grid.row {
-        grid-template-rows: 1fr;
-        
-    }
-    .grid.wrapped {
-        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-    }
 /* Typography */
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Montserrat', sans-serif;
@@ -190,15 +160,12 @@ section {
     }
 
 #cover {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     min-height: 88vh;
     border-bottom: rgba(63, 48, 39, 0.08) 1px solid;
-    background-color: rgba(255, 255, 255, 0.08);
 }
 #contacts {
-    background-color: rgba(255, 255, 255, 0.08);
+    margin-bottom: 64px;
 }
 #action-button {
     margin-top: 16px;
@@ -220,11 +187,4 @@ section {
 
     background-color: var(--color-text-link);
     color: var(--color-background);
-}
-
-#map {
-    min-height: 288px;
-    width: 100%;
-    border: 0px solid #000;
-    border-radius: 8px;
 }
