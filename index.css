@@ -173,6 +173,7 @@ section {
 }
 #contacts {
     margin-bottom: 64px;
+    border-bottom: none;
 }
 #action-button {
     margin-top: 16px;
