@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ----------------------------------------------------------------------------------------------------
+VARIABLES
+---------------------------------------------------------------------------------------------------- */
 :root {
-    --color-background: #FEFEFE;
-    --color-text-primary: rgba(63, 48, 39, 0.60);
-    --color-text-secondary: rgba(63, 48, 39, 0.38);
-    --color-text-disabled: rgba(63, 48, 39, 0.20);
+    --color-background: #2A374A;
+    --color-text-primary: rgba(255, 255, 255, 0.96);
+    --color-text-secondary: rgba(255, 255, 255, 0.72);
+    --color-text-disabled: rgba(255, 255, 255, 0.24);
     --color-text-link: rgba(9, 194, 195, 1.0);
     --color-text-header: #0192C9;
     --color-accent: #FF3F33;
-    --color-footer: #2b2a28;
+    --color-footer: rgba(0, 0, 0, 0.24);
+    --color-surface-primary: rgba(255, 255, 255, 0.04);
 }
 
+
+/* ----------------------------------------------------------------------------------------------------
+MAIN
+---------------------------------------------------------------------------------------------------- */
 body {
     font-size: 16px;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     line-height: 1.5;
 
     min-height: 100vh;
@@ -26,6 +35,10 @@ body {
     background-color: var(--color-background);
     /*background: linear-gradient(110deg, #F0E2D0 60%, #E6CFB2 60%);*/
     color: var(--color-text-primary)
+}
+
+header {
+    background-color: var(--color-footer);
 }
 
 main {
@@ -54,12 +67,18 @@ li::marker {
     color: var(--color-accent);
 }
 
-/* Layout */
+/* ----------------------------------------------------------------------------------------------------
+LAYOUT
+---------------------------------------------------------------------------------------------------- */
     .box {
         display: flex;
+        gap: 16px;
     }
     .box.row {
         flex-direction: row;
+    }
+    .box.row.wrap {
+        flex-wrap: wrap;
     }
     .box.column {
         flex-direction: column;
@@ -75,12 +94,15 @@ li::marker {
         justify-content: center;
     }
 
-/* Typography */
+/* ----------------------------------------------------------------------------------------------------
+TYPOGRAPHY
+---------------------------------------------------------------------------------------------------- */
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Montserrat', sans-serif;
         color: var(--color-text-header);
     }
     h1 {
+        font-family: 'Montserrat Alternates', sans-serif;
         font-size: 48px;
         font-weight: 300;
     }
@@ -128,7 +150,9 @@ li::marker {
         font-weight: 700;
     }
 
-/* Adaptive */
+/* ----------------------------------------------------------------------------------------------------
+ADAPTIVE LAYOUT
+---------------------------------------------------------------------------------------------------- */
     @media (max-width: 480px) {
         /* Mobile */
         .wrapper {
@@ -167,7 +191,7 @@ section {
 }
 #cover {
     justify-content: center;
-    min-height: 88vh;
+    min-height: 80vh;
     border-bottom: rgba(63, 48, 39, 0.08) 1px solid;
     padding-bottom: 0px;
 }
@@ -180,6 +204,9 @@ section {
 }
 
 
+/* ----------------------------------------------------------------------------------------------------
+COMPONETS
+---------------------------------------------------------------------------------------------------- */
 .uibutton {
     display: inline-flex;
     flex-direction: row;
@@ -195,4 +222,17 @@ section {
 
     background-color: var(--color-text-link);
     color: var(--color-background);
+}
+
+.uicard {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: 16px;
+    border: 0px solid var(--color-surface-primary);
+    border-radius: 16px;
+
+    background-color: var(--color-surface-primary);
 }
