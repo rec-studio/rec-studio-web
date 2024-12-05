@@ -5,15 +5,23 @@
 VARIABLES
 ---------------------------------------------------------------------------------------------------- */
 :root {
-    --color-background: #2A374A;
-    --color-text-primary: rgba(255, 255, 255, 0.96);
-    --color-text-secondary: rgba(255, 255, 255, 0.72);
-    --color-text-disabled: rgba(255, 255, 255, 0.24);
-    --color-text-link: rgba(9, 194, 195, 1.0);
-    --color-text-header: #0192C9;
-    --color-accent: #FF3F33;
-    --color-footer: rgba(0, 0, 0, 0.24);
-    --color-surface-primary: rgba(255, 255, 255, 0.04);
+    /* BASIC COLORS */
+        --color-background: #2A374A;
+        --color-text-primary: rgba(255, 255, 255, 0.96);
+        --color-text-secondary: rgba(255, 255, 255, 0.72);
+        --color-text-disabled: rgba(255, 255, 255, 0.24);
+        --color-text-link: rgba(9, 194, 195, 1.0);
+        --color-text-header: #0192C9;
+        --color-accent: #FF3F33;
+        --color-footer: rgba(0, 0, 0, 0.24);
+        --color-surface-primary: rgba(255, 255, 255, 0.04);
+
+    /* BRAND COLORS */
+
+    /* GRADIENTS */
+        --color-gradient-one: linear-gradient(135deg, #1687C7, #4DB2EC);
+        --color-gradient-two: linear-gradient(135deg, #322D6C, #544BB4);
+        --color-gradient-three: linear-gradient(135deg, #FFEACC, #FFF4CC);
 }
 
 
@@ -43,7 +51,7 @@ header {
 
 main {
     display: flex;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 
     margin-top: auto;
     margin-bottom: auto;
@@ -72,16 +80,20 @@ LAYOUT
 ---------------------------------------------------------------------------------------------------- */
     .box {
         display: flex;
+        flex: 1 1 288px;
         gap: 16px;
     }
     .box.row {
         flex-direction: row;
+        flex: 1 1 288px;
     }
     .box.row.wrap {
         flex-wrap: wrap;
+        flex: 1 1 288px;
     }
     .box.column {
         flex-direction: column;
+        flex: 1 1 288px;
     }
     .box.center {
         justify-content: center;
@@ -227,12 +239,38 @@ COMPONETS
 .uicard {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1 1 288px;
 
     padding: 16px;
     border: 0px solid var(--color-surface-primary);
     border-radius: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
 
     background-color: var(--color-surface-primary);
+}
+
+/* ----------------------------------------------------------------------------------------------------
+EXTRAS
+---------------------------------------------------------------------------------------------------- */
+
+#highlight-one {
+    background: var(--color-gradient-one);
+}
+#highlight-two {
+    background: var(--color-gradient-two);
+}
+#highlight-three {
+    background: var(--color-gradient-three);
+    color: var(--color-background);
+}
+
+#cover {
+    /*background: url("assets/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    --webkit-filter: blur(8px);
+    opacity: 0.24;*/
 }
