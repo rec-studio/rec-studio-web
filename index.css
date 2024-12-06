@@ -264,13 +264,3 @@ EXTRAS
     background: var(--color-gradient-three);
     color: var(--color-background);
 }
-
-#cover {
-    /*background: url("assets/cover.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: blur(4px);
-    --webkit-filter: blur(8px);
-    opacity: 0.24;*/
-}
