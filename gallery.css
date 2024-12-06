@@ -1,0 +1,156 @@
+/* Slideshow container */
+.gallery__slideshow__container {
+    max-width: 1280px;
+    position: relative;
+    aspect-ratio: 16 / 9;
+
+    border: 0px solid #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Hide the images by default */
+.gallery__slides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 8px 8px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.gallery__caption__text {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.gallery__counter__text {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.gallery__slideshow__dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.25s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* ADAPTIVE LAYOUTS */
+
+    /* MOBILE */
+    @media only screen and (max-width: 480px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 3 / 2;
+        }
+        .gallery__slides img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+
+    /* TABLET PORTRAIT */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 3 / 2;
+        }
+        .gallery__slides img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+
+    /* TABLET LANDSCAPE */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 3 / 2;
+        }
+        .gallery__slides img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+
+    /* LAPTOP */
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 16 / 9;
+        }
+        .gallery__slides img {
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    /* DESKTOP */
+    @media only screen and (min-width: 1601px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 16 / 9;
+        }
+        .gallery__slides img {
+            aspect-ratio: 16 / 9;
+        }
+    }

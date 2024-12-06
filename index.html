@@ -82,6 +82,7 @@
         <!--END GA-->
 
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="gallery.css">
         <title>Kalimba Pro - Студия звукозаписи, репетиционная база и продюсерский центр</title>
 
         
@@ -111,8 +112,64 @@
                         Это студия, которая поможет осуществить ваши творческие задумки, мечты и фантазии. 
                         Мы не просто создаем качественную музыкальную продукцию. 
                         Мы формируем образ, рождаем настроение, пробуждаем вдохновение и помогаем воплотить замысел в жизнь.</p>
-                    <div id="gallery">
-                        <!-- Gallery -->
+                    <div class="box column center" id="gallery">
+                        <!-- GALLERY -->
+                        <div style="display: inline-block;">
+                            <!-- Slideshow container -->
+                            <div class="gallery__slideshow__container">
+                                <!-- Full-width images with number and caption text -->
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">1 / 7</div>
+                                    <img src="media/gallery/img-1.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">2 / 7</div>
+                                    <img src="media/gallery/img-2.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">3 / 7</div>
+                                    <img src="media/gallery/img-3.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">4 / 7</div>
+                                    <img src="media/gallery/img-4.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">5 / 7</div>
+                                    <img src="media/gallery/img-5.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">6 / 7</div>
+                                    <img src="media/gallery/img-6.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <div class="gallery__slides fade">
+                                    <div class="gallery__counter__text">7 / 7</div>
+                                    <img src="media/gallery/img-7.jpg" alt="" style="width:100%">
+                                    <!--<div class="gallery__caption__text">Caption Text</div>-->
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <br>
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('1')"></span>
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('2')"></span>
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('3')"></span>
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('4')"></span>
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('5')"></span>
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('6')"></span>
+                                <span class="gallery__slideshow__dot" onclick="currentSlide('7')"></span>
+                            </div>
+                            <script src="js/gallery.js"></script>
+                        </div>
                     </div>
                     <p>Продвинутый артист или новичок – вы всегда можете прийти к нам в студию, поработать над своими идеями, поиграть с друзьями или даже устроить маленький семейный концерт.
                         Также мы можем придумать звуковое оформление и сценарий для любого мероприятия, праздника или шоу.</p>
