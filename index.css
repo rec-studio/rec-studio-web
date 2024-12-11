@@ -10,8 +10,8 @@ VARIABLES
         --color-text-primary: rgba(255, 255, 255, 0.96);
         --color-text-secondary: rgba(255, 255, 255, 0.72);
         --color-text-disabled: rgba(255, 255, 255, 0.24);
-        --color-text-link: rgba(9, 194, 195, 1.0);
-        --color-text-header: #0192C9;
+        --color-text-link: #4DB2EC;/*#FFF4CC;*/ /*rgba(9, 194, 195, 1.0);*/
+        --color-text-header: #FFF4CC; /*#0192C9;*/
         --color-accent: #FF3F33;
         --color-footer: rgba(0, 0, 0, 0.24);
         --color-surface-primary: rgba(255, 255, 255, 0.04);
@@ -248,6 +248,23 @@ COMPONETS
     overflow: hidden;
 
     background-color: var(--color-surface-primary);
+}
+
+.uilinkbutton {
+    margin: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    min-height: 48px;
+    max-height: 48px;
+
+    background-color: var(--color-text-link);
+    color: var(--color-text-primary);
+
+    border: 0px solid #000;
+    border-radius: 48px;
+    overflow: hidden;
 }
 
 /* ----------------------------------------------------------------------------------------------------
