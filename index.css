@@ -6,12 +6,12 @@ VARIABLES
 ---------------------------------------------------------------------------------------------------- */
 :root {
     /* BASIC COLORS */
-        --color-background: #2A374A;
+        --color-background: rgb(42, 55, 74);
         --color-text-primary: rgba(255, 255, 255, 0.96);
         --color-text-secondary: rgba(255, 255, 255, 0.72);
         --color-text-disabled: rgba(255, 255, 255, 0.24);
         --color-text-link: #4DB2EC;/*#FFF4CC;*/ /*rgba(9, 194, 195, 1.0);*/
-        --color-text-header: #FFF4CC; /*#0192C9;*/
+        --color-text-header: #FFF9E7; /*#0192C9;*/
         --color-accent: #FF3F33;
         --color-footer: rgba(0, 0, 0, 0.24);
         --color-surface-primary: rgba(255, 255, 255, 0.04);
@@ -21,7 +21,7 @@ VARIABLES
     /* GRADIENTS */
         --color-gradient-one: linear-gradient(135deg, #1687C7, #4DB2EC);
         --color-gradient-two: linear-gradient(135deg, #322D6C, #544BB4);
-        --color-gradient-three: linear-gradient(135deg, #FFEACC, #FFF4CC);
+        --color-gradient-three: linear-gradient(135deg, #FFF9E7, #FFF9E7);
 }
 
 
@@ -46,7 +46,10 @@ body {
 }
 
 header {
-    background-color: var(--color-footer);
+    /*background-color: var(--color-footer);*/
+    background: 
+        linear-gradient(rgba(42, 55, 74, 0.04), rgba(42, 55, 74, 1.0)), /* затемнение */
+        url('assets/cover.jpg') no-repeat center center / cover; /* фоновое изображение */
 }
 
 main {
@@ -114,7 +117,7 @@ TYPOGRAPHY
         color: var(--color-text-header);
     }
     h1 {
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 48px;
         font-weight: 300;
     }
@@ -203,7 +206,7 @@ section {
 }
 #cover {
     justify-content: center;
-    min-height: 80vh;
+    min-height: 88vh;
     border-bottom: rgba(63, 48, 39, 0.08) 1px solid;
     padding-bottom: 0px;
 }
