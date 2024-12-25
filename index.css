@@ -207,7 +207,7 @@ section {
 #cover {
     justify-content: center;
     min-height: 88vh;
-    border-bottom: rgba(63, 48, 39, 0.08) 1px solid;
+    /*border-bottom: rgba(63, 48, 39, 0.08) 1px solid;*/
     padding-bottom: 0px;
 }
 #contacts {
