@@ -107,7 +107,9 @@
             aspect-ratio: 3 / 2;
         }
         .gallery__slides img {
-            aspect-ratio: 3 / 2;
+            /*aspect-ratio: 3 / 2;*/
+            max-width: 100%;
+            height: auto;
         }
     }
 
@@ -118,7 +120,9 @@
             aspect-ratio: 3 / 2;
         }
         .gallery__slides img {
-            aspect-ratio: 3 / 2;
+            /*aspect-ratio: 3 / 2;*/
+            max-width: 100%;
+            height: auto;
         }
     }
 
@@ -129,7 +133,9 @@
             aspect-ratio: 3 / 2;
         }
         .gallery__slides img {
-            aspect-ratio: 3 / 2;
+            /*aspect-ratio: 3 / 2;*/
+            max-width: 100%;
+            height: auto;
         }
     }
 
@@ -140,7 +146,9 @@
             aspect-ratio: 16 / 9;
         }
         .gallery__slides img {
-            aspect-ratio: 16 / 9;
+            /*aspect-ratio: 16 / 9;*/
+            max-width: 100%;
+            height: auto;
         }
     }
 
@@ -151,6 +159,8 @@
             aspect-ratio: 16 / 9;
         }
         .gallery__slides img {
-            aspect-ratio: 16 / 9;
+            /*aspect-ratio: 16 / 9;*/
+            max-width: 100%;
+            height: auto;
         }
     }
