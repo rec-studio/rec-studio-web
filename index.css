@@ -164,6 +164,9 @@ TYPOGRAPHY
     .typography--bold {
         font-weight: 700;
     }
+    .typography--uppercase {
+        text-transform: uppercase;
+    }
 
 /* ----------------------------------------------------------------------------------------------------
 ADAPTIVE LAYOUT
@@ -293,4 +296,21 @@ EXTRAS
     border-radius: 16px;
     box-sizing: border-box;
     overflow: hidden;
+}
+.pricing__list > li {
+    padding-bottom: 16px;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+PATTERNS
+---------------------------------------------------------------------------------------------------- */
+.pattern-blueprint {
+    background-color: var(--color-surface-primary);
+    background-image:
+    linear-gradient(rgba(255,255,255,0.08) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 96px 96px, 96px 96px, 16px 16px, 16px 16px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
