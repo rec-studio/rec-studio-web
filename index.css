@@ -232,14 +232,20 @@ COMPONETS
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    flex-shrink: 1;
+    flex-shrink: 0;
 
     padding: 8px 24px;
     border: #000 0px solid;
     border-radius: 32px;
 
     background-color: var(--color-text-link);
-    color: var(--color-background);
+    color: var(--color-text-primary);
+}
+.uibutton.outlined {
+    background-color: var(--color-surface-primary);
+    color: var(--color-text-primary);
+    border: var(--color-text-disabled) 1px solid;
+    border-radius: 32px;
 }
 
 .uicard {
